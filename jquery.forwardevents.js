@@ -3,9 +3,9 @@
 	function triggerEvent($elem, eventType, event, relatedTarget)
 	{
 		var originalType = event.type,
-			originalEvent = event.originalEvent,
-			originalTarget = event.target,
-			originalRelatedTarget = event.relatedTarget;
+		originalEvent = event.originalEvent,
+		originalTarget = event.target,
+		originalRelatedTarget = event.relatedTarget;
 
 		event.target = $elem[0];
 		event.type = eventType;
@@ -81,8 +81,9 @@
                         triggerEvent(t, et, e);
                     }
 					
-                    if (lastT && (t[0] === lastT[0])) {	
-						if (et == 'mouseup') {
+                    if (lastT && (t[0] === lastT[0])) 
+                    {	
+			if (et == 'mouseup') {
 
                             // using document.elementFromPoint in mouseup doesn't trigger dblclick event on the overlay
                             // hence we have to manually check for dblclick
@@ -102,13 +103,13 @@
                         }
                     } else {
 						
-						clicks = 0;
-                        if (lastT) {		
-							triggerEvent(lastT, 'mouseout', e, t[0]);
+			clicks = 0;
+                        if (lastT) {	
+				triggerEvent(lastT, 'mouseout', e, t[0]);
                         }
-						triggerEvent(t, 'mouseover', e, lastT ? lastT[0] : $this[0]);
+			triggerEvent(t, 'mouseover', e, lastT ? lastT[0] : $this[0]);
                     }
-					lastT = t;
+		    lastT = t;
                     //instance._suspended = false;
                 }
             });
