@@ -3,6 +3,9 @@ jquery.forwardevents
 
 jQuery plugin which forwards mouse events from one DOM Element to another.
 
+Based on the jQuery code from http://e-infotainment.com/applications/jquery-plugins/behaviours/forward-mouse-events/
+
+
 Usage:
 
 1. Include the js file after jQuery itself.
