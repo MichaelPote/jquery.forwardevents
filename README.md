@@ -1,7 +1,7 @@
 jquery.forwardevents
 ====================
 
-Forwards mouse events from one DOM Element to another.
+jQuery plugin which forwards mouse events from one DOM Element to another.
 
 Usage:
 
